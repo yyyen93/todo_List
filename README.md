@@ -1,4 +1,4 @@
 # todo_List
 
-#Gif
+# Gif
 ![gif](https://github.com/yyyen93/todo_List/blob/main/todoList.gif)
