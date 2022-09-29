@@ -22,9 +22,19 @@
             height: 22px;
         }
 
+        .delete{
+            margin-left:5px;
+            padding:2px 30px;
+            border-radius:5px;
+        }
+
+        .delete:hover{
+            background-color:rgba(0,0,0,0.05);
+            border-color:rgba(0,0,0,0.5);
+        }
 
 
-        .button-85 {
+        .rainbowButton {
             padding: 0.6em 2em;
             border: none;
             outline: none;
@@ -39,7 +49,8 @@
             touch-action: manipulation;
         }
 
-        .button-85:before {
+
+        .rainbowButton:before {
             content: "";
             background: linear-gradient(45deg,
                     #ff0000,
@@ -60,12 +71,12 @@
             -webkit-filter: blur(5px);
             width: calc(100% + 4px);
             height: calc(100% + 4px);
-            animation: glowing-button-85 20s linear infinite;
+            animation: glowing-rainbowButton 20s linear infinite;
             transition: opacity 0.3s ease-in-out;
             border-radius: 10px;
         }
 
-        @keyframes glowing-button-85 {
+        @keyframes glowing-rainbowButton {
             0% {
                 background-position: 0 0;
             }
@@ -79,7 +90,7 @@
             }
         }
 
-        .button-85:after {
+        .rainbowButton:after {
             z-index: -1;
             content: "";
             position: absolute;
@@ -105,7 +116,7 @@
         const input = document.querySelector('#input');
         const button = document.querySelector('#btn');
         const ol = document.querySelector('ol');
-        button.className ="button-85";
+        button.className = "rainbowButton";
 
         //Create delete button
         function buttonDelete(parent) {
